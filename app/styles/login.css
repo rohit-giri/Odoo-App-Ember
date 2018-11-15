@@ -1,0 +1,35 @@
+html{
+  background: #F5F5F5;
+}
+#loginCard{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 310px;
+    max-height: 300px;
+    margin: auto;
+}
+#inputfield
+{
+  height:1em;
+  margin-left: -11px;
+}
+#WorkorderCard
+{
+  margin:0;
+  padding: 0;
+}
+.lr-no-padding{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.text-center{
+  text-align:center;
+}
+#paddingLeft
+{
+  padding-left: 29vw;
+}

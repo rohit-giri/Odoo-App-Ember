@@ -1,0 +1,6 @@
+{
+  "name": "odoo-app",
+  "dependencies": {
+    "materialize": "0.97.6"
+  }
+}
