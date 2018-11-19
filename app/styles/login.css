@@ -33,3 +33,63 @@ html{
 {
   padding-left: 29vw;
 }
+@media only screen and (min-width: 700px) {
+  #Username{
+    margin-top: 12px;
+    font-size: 18px;
+    position: relative;
+    left: 3%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #Username{
+    margin-top: 12px;
+    font-size: 18px;
+    position: relative;
+    left: 6%;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  #Username{
+    margin-top: 12px;
+    font-size: 18px;
+    position: relative;
+    left: 9%;
+  }
+}
+.card .card-content
+{
+  padding: 10px;
+}
+.text-weight
+{
+  font-weight: 300;
+  font-size: 24px;
+  padding-left: 24px;
+}
+th
+{
+  font-weight: 300;
+}
+table,th,tr,td{
+  border: 1px solid black;
+}
+table{
+   margin-top: 9px;
+}
+th#source
+{
+  width: 158px;
+}
+th#Product{
+  width: 43%;
+}
+tbody a
+{
+  display: contents;
+  color: black;
+}
+#padddingLeftDescription
+{
+  padding-left: 13vw;
+}

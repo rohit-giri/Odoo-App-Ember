@@ -2,10 +2,58 @@
     <div class="card" id="WorkorderCard">
       <div class="row card-content center">
   			<b><span class="col s8 card-title" id="paddingLeft">Wrapping</span></b>
-        <span class="col s2">Prashant</span>
-        <span class="col s2"><div class="center-align push-down">
-      								{{#link-to 'index'}}<button type="submit" class="btn waves-effect white-text">Logout</button>{{/link-to}}
-      		</div></span>
+        <span class="col s2" id="Username">Prashant</span>
+        <span class="col s2">
+          <div class="center-align push-down">
+      								{{#link-to 'index'}}<button type="submit" class="btn waves-effect white-text red lighten-2">Logout</button>{{/link-to}}
+      		</div>
+        </span>
   		</div>
+    </div>
+    <div>
+      <b><span class="text-weight">Work Orders</span></b>
+    </div>
+    <div>
+      <table class="striped">
+        <thead>
+          <tr>
+              <th id="source">Source</th>
+              <th id="Product">Product</th>
+              <th>Original Quantity</th>
+              <th>Current Quantity</th>
+              <th>Due Date</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="red lighten-1">
+            <td>SO5887:MO28470</td>
+            <td>
+              Conductor PTFE insulation type E 600V,
+              Colour: Green, Nominal OD: 1.78mm,
+              Weight: 11.64gm
+            </td>
+            <td>252.500 m</td>
+            <td>252.500 m</td>
+            <td>31/08/2018</td>
+          </tr>
+          <tr>
+            <td>SO5887:MO28470</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>$0.87</td>
+            <td>31/08/2018</td>
+          </tr>
+          {{#link-to 'description'}}
+          <tr class="lime darken-1">
+            <td>SO5887:MO28470</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>$0.87</td>
+            <td>31/08/2018</td>
+          </tr>
+          {{/link-to}}
+        </tbody>
+      </table>
     </div>
 </div>
