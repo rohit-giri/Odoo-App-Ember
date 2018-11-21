@@ -138,3 +138,42 @@ tbody a
 {
   margin-right: 1%;
 }
+.consumed-product-card
+{
+  margin-left:9%;
+  width: 80%;
+}
+#Product-table
+{
+  width: 20%;
+}
+#card-position
+{
+  float: none;
+}
+.padding-left
+{
+  padding-left: 3%;
+padding-right: 18%;
+padding-bottom: 2px;
+padding-top: 2px;
+margin-left: 2%;
+}
+@media only screen and (max-width: 1024px) {
+  #descriptionpage{
+    height: 109vh;
+    position: fixed;
+  }
+}
+.Black{
+color: black;
+}
+.consumed-product-card-testing
+{
+  margin-left:1%;
+  width: 98%;
+}
+#Product-testing
+{
+width: 21%; 
+}
