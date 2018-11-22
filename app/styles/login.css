@@ -12,7 +12,12 @@ html{
     max-height: 300px;
     margin: auto;
 }
-#inputfield
+#inputfield_username
+{
+  height:1em;
+  margin-left: -11px;
+}
+#inputfield_password
 {
   height:1em;
   margin-left: -11px;
@@ -175,5 +180,5 @@ color: black;
 }
 #Product-testing
 {
-width: 21%; 
+width: 21%;
 }

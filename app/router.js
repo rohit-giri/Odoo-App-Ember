@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('sintering');
   this.route('twisting');
   this.route('testing');
+  this.route('isolate');
+  this.route('braiding');
 });
 
 export default Router;

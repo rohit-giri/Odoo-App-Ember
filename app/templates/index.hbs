@@ -8,7 +8,7 @@
 				<span>Username:</span>
 			</div>
 			<div class="col s6">
-				<span>{{input type="text" id="inputfield"}}</span>
+				<span>{{input type="text" id="inputfield_username" value=fname}}</span>
 			</div>
 		</div>
 		<div class="row">
@@ -16,11 +16,11 @@
 				<span>Password:</span>
 			</div>
 			<div class="col s6">
-				<span>{{input type="password" id="inputfield"}}</span>
+				<span>{{input type="password" id="inputfield_password" value=password}}</span>
 			</div>
 		</div>
 		<div class="col s12 center-align push-down">
-			{{#link-to 'workorders'}}<button type="submit" class="btn waves-effect white-text default-color-button">Log In</button>{{/link-to}}
+			{{#link-to 'workorders'}}<button type="submit" class="btn waves-effect white-text default-color-button" {{action 'save'}}>Log In</button>{{/link-to}}
 		</div>
 	</div>
 </div>
