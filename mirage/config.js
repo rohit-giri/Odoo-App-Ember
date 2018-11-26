@@ -1,29 +1,67 @@
 import Mirage from 'ember-cli-mirage';
 export default function() {
-  function formEncodedToJson(encoded) {
-    var result = {};
-    encoded.split("&").forEach(function(part) {
-      var item = part.split("=");
-      result[item[0]] = decodeURIComponent(item[1]);
-    });
-    return result;
-  }
-  this.post('/token', function(db, request){
-    var params = formEncodedToJson(request.requestBody);
-    if(params.username === "abc" && params.password=== "123") {
+  this.get('/token', function(db, request){
+      if(request.username=='Amit' && request.password=='123') {
       return {
         "access_token":"PA$$WORD",
-        "token_type":"bearer"
+        "token_type":"bearer",
+        "name":"Wrapping",
+        "value":"description"
       };
     }
-    else if(params.username === "def" && params.password=== "123") {
+    else if(request.username=='Emceee' && request.password=='346')
+    {
       return {
         "access_token":"PA$$WORD",
-        "token_type":"bearer"
+        "token_type":"bearer",
+        "name":"Sintering",
+        "value":"sintering"
       };
-    }else{
-      var body = { errors: 'Email or password is invalid' };
-      return new Mirage.Response(401, {}, body);
+    }
+    else if(request.username=='Suresh' && request.password=='789')
+    {
+      return {
+        "access_token":"PA$$WORD",
+        "token_type":"bearer",
+        "name":"Twisting",
+        "value":"twisting"
+      };
+    }
+    else if(request.username=='moles' && request.password=='123')
+    {
+      return {
+        "access_token":"PA$$WORD",
+        "token_type":"bearer",
+        "name":"Testing(for Hookup)",
+        "value":"testing"
+      };
+    }
+    else if(request.username=='odoo' && request.password=='123')
+    {
+      return {
+        "access_token":"PA$$WORD",
+        "token_type":"bearer",
+        "name":"Testing(for Multicore)",
+        "value":"testing"
+      };
+    }
+    else if(request.username=='isolate' && request.password=='123')
+    {
+      return {
+        "access_token":"PA$$WORD",
+        "token_type":"bearer",
+        "name":"Isolator",
+        "value":"isolate"
+      };
+    }
+    else if(request.username=='brian' && request.password=='123')
+    {
+        return {
+          "access_token":"PA$$WORD",
+          "token_type":"bearer",
+          "name":"Braiding",
+          "value":"braiding"
+        };
     }
 });
 }
