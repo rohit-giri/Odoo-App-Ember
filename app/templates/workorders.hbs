@@ -25,64 +25,19 @@
           </tr>
         </thead>
         <tbody>
+          {{#each model as |rental|}}
           {{#link-to value}}
           <tr class="red lighten-1">
-            <td>SO5887:MO28470</td>
+            <td>{{rental.source}}</td>
             <td>
-              Conductor PTFE insulation type E 600V,
-              Colour: Green, Nominal OD: 1.78mm,
-              Weight: 11.64gm
+              {{rental.product}}
             </td>
-            <td>252.500 m</td>
-            <td>252.500 m</td>
-            <td>31/08/2018</td>
+            <td>{{rental.originalquantity}}</td>
+            <td>{{rental.currentquantity}}</td>
+            <td>{{rental.date}}</td>
           </tr>
           {{/link-to}}
-          {{#link-to value}}
-          <tr>
-            <td>SO5887:MO28470</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-            <td>$0.87</td>
-            <td>31/08/2018</td>
-          </tr>
-          {{/link-to}}
-          {{#link-to value}}
-          <tr class="lime darken-1">
-            <td>SO5887:MO28470</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-            <td>$0.87</td>
-            <td>31/08/2018</td>
-          </tr>
-          {{/link-to}}
-          {{#link-to value}}
-          <tr>
-            <td>SO5887:MO28470</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-            <td>$0.87</td>
-            <td>31/08/2018</td>
-          </tr>
-          {{/link-to}}
-          {{#link-to value}}
-          <tr>
-            <td>SO5887:MO28470</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-            <td>$0.87</td>
-            <td>31/08/2018</td>
-          </tr>
-          {{/link-to}}
-          {{#link-to value}}
-          <tr>
-            <td>SO5887:MO28470</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-            <td>$0.87</td>
-            <td>31/08/2018</td>
-          </tr>
-          {{/link-to}}
+          {{/each}}
         </tbody>
       </table>
     </div>

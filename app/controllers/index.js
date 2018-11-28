@@ -38,7 +38,7 @@ export default Controller.extend({
           {
             open('/workorders?name='+a.name+'&user='+username+'&value='+a.value, '_self').close();
           }
-          else if(a.name=='Testing (for Multicore)')
+          else if(a.name=='Testing(for Multicore)')
           {
             open('/workorders?name='+a.name+'&user='+username+'&value='+a.value, '_self').close();
           }
